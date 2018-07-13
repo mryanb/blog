@@ -1,7 +1,8 @@
-@import "~mini.css/dist/mini-default.css";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$secondary-color: #0d3e99;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -18,4 +19,45 @@ body {
 .box { 
     @include border-radius(10px);
     outline: 2px dashed blue;
+}
+
+.author_img {
+    border: 12px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 4px $secondary-color;
+    margin-right: 35px;
+    margin-left: 0;
+    min-width: 280px !important;
+    max-width: 280px;
+    min-height: 280px !important;
+    max-height: 280px;
+}
+
+.author_img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.author_info {
+    color: #2D3E50;
+    flex-grow: 1;
+}
+
+.author_info p {
+    font-size: 1.125rem;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    color: #2D3E50;
+    font-weight: 300;
+    border-bottom: 3px solid $secondary-color;
+    padding-bottom: 24px;
+    margin-bottom: 20px;
+    max-width: 90%;
 }
