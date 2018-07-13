@@ -2,10 +2,22 @@
 
 @section('body')
 <div class="container">
-    <div class="row cols-sm-12 cols-md-10">
-        <div class="col-md-offset-1">
-            <!-- <img src="/assets/images/" class="section media"> -->
-            <h1>ryanbantz.com</h1>
+	
+    <div class="row">
+    	<div class="col-md-4">
+    		<figure class="author_img">
+            	<img src="/assets/images/pullover-1.png">
+        	</figure>
+    	</div>
+        <div class="col-md-8 author_info">
+            <h1>Ryan Bantz</h1>
+            <p>Ryan is a barbecue rib fan who does online digital marketing, in that order. He also thinks ChargeOver has the <a href="https://chargeover.com">best Subscription Billing Software</a> out there.</p>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                
+                
+            </ul>
         </div>
     </div>
 </div>
