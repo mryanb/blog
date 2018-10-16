@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4152b4cc31886a513a355b9ba390dde3",
+    "content-hash": "63e28737e6d232ae7f66b1cb7b1cd170",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -149,6 +149,50 @@
                 "parser"
             ],
             "time": "2018-03-08T01:11:30+00:00"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2015-11-01T10:19:22+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -1232,24 +1276,24 @@
         },
         {
             "name": "tightenco/jigsaw",
-            "version": "v1.1.3",
+            "version": "v1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/jigsaw.git",
-                "reference": "3327f71046a459858c9d4b76478fc475ffcd7b07"
+                "reference": "29193e9e48b077469809e8b3b00408105fdfc936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/3327f71046a459858c9d4b76478fc475ffcd7b07",
-                "reference": "3327f71046a459858c9d4b76478fc475ffcd7b07",
+                "url": "https://api.github.com/repos/tightenco/jigsaw/zipball/29193e9e48b077469809e8b3b00408105fdfc936",
+                "reference": "29193e9e48b077469809e8b3b00408105fdfc936",
                 "shasum": ""
             },
             "require": {
+                "erusev/parsedown-extra": "^0.7.1",
                 "illuminate/container": "^5.6",
                 "illuminate/support": "^5.6",
                 "illuminate/view": "^5.6",
                 "mnapoli/front-yaml": "^1.5",
-                "mnapoli/silly": "1.3 - 1.5",
                 "mockery/mockery": "^1.0.0",
                 "symfony/console": "~3.0|^4.0",
                 "symfony/yaml": "^4.0"
@@ -1288,7 +1332,7 @@
                 "site",
                 "static"
             ],
-            "time": "2018-03-28T10:59:29+00:00"
+            "time": "2018-08-02T14:25:24+00:00"
         }
     ],
     "packages-dev": [],
