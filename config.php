@@ -1,7 +1,15 @@
 <?php
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:3000',
     'production' => false,
-    'collections' => [],
+    'collections' => [
+        'posts' => [
+            'path' => '{filename}',
+            'author' => 'Ryan Bizance',
+        ],
+    ],
+    'active' => function ($page, $section) {
+        return str_contains($page->getPath(), $section) ? 'active' : '';
+    },
 ];

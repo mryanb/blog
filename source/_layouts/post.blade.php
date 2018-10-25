@@ -1,6 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
+<!-- Path: {{ $page->getPath() }} -->
     <section id="articles" class="about-section py-4">
         <div class="container">
             <div class="row text-center-xs pb-5 articlepost">

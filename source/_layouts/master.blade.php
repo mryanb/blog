@@ -64,13 +64,13 @@
                         </button>
                         <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active mx-3">
-                                    <a class="nav-link font-weight-bold" href="#">Software
+                                <li class="nav-item mx-3 {{ $page->active('index') }}">
+                                    <a class="nav-link font-weight-bold" href="{{ $page->baseUrl }}/">Home
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
-                                <li class="nav-item mx-3">
-                                    <a class="nav-link font-weight-bold" href="#">Pricing</a>
+                                <li class="nav-item mx-3 {{ $page->active('about') }}">
+                                    <a class="nav-link font-weight-bold" href="{{ $page->baseUrl }}/about">About</a>
                                 </li>
                                 <li class="nav-item dropdown mx-3">
                                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
