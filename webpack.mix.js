@@ -11,7 +11,7 @@ mix.webpackConfig({
     plugins: [
         build.jigsaw,
         build.browserSync(),
-        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss']),
+        build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.scss', 'source/**/*.js']),
         new CopyWebpackPlugin([{
             from: 'source/_assets/images',
             to: 'images', // Laravel mix will place this in 'assets/images'

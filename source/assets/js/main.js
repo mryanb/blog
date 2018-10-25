@@ -16959,9 +16959,25 @@ module.exports = g;
 /***/ }),
 
 /***/ "./source/_assets/js/main.js":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
 
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > $('#makeStickyAfter').offset().top - 50) {
+            if (!$('#stickyHeader').hasClass('sticky-top')) {
+                $('#stickyHeader').addClass('sticky-top');
+                $('#stickyHeader').css("display", "block");
+            }
+        } else {
+            if ($('#stickyHeader').hasClass('sticky-top')) {
+                $('#stickyHeader').removeClass('sticky-top');
+                $('#stickyHeader').css("display", "none");
+            }
+        }
+    }).trigger('scroll');
+});
 
 /***/ }),
 

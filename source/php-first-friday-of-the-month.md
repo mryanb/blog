@@ -1,6 +1,8 @@
 ---
 extends: _layouts.post
-section: body
+section: postContent
+title: "How to get the first Friday of the month in PHP"
+author: "Ryan Bantz"
 ---
 
 # How to get the first Friday of the month in PHP
@@ -12,8 +14,6 @@ Here are a few more examples:
 <?php
 
 $str = date("F j, Y", strtotime('first friday 2017-04'));       // April 7, 2017
-
-
 
 ```
 
