@@ -21,6 +21,7 @@
     "dependencies": {
         "bootstrap": "^4.1.2",
         "copy-webpack-plugin": "^4.5.2",
+        "highlight.js": "^9.13.1",
         "imagemin-mozjpeg": "^7.0.0",
         "imagemin-webpack-plugin": "^2.1.5",
         "jquery": "^3.3.1",

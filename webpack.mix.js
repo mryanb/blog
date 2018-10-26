@@ -27,6 +27,6 @@ mix.webpackConfig({
     ]
 });
 
-mix.js(['source/_assets/js/main.js', 'node_modules/bootstrap/dist/js/bootstrap.js'], 'js')
+mix.js(['source/_assets/js/main.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/highlight.js/lib/highlight.js'], 'js')
     .sass('source/_assets/sass/main.scss', 'css/main.css')
     .version();
