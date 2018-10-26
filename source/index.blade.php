@@ -11,8 +11,8 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-12 content-part">
                 <h2 class="title">Hi, I'm Ryan</h2>
-                <p>In 201X, I left my job to start a <span>software company</span>. Some other interests that I have are <a class="main-interest" href="#">family</a>, <a class="main-interest" href="#">strengths finder</a>, and <a class="main-interest" href="#">blah, blah, blah</a>.
-                    <a href="#">SEO video course.</a>
+                <p>
+                    In 2012, I left my full time contract job to jump head first into starting a <span>software company</span>. Some other interests that I have are <a class="main-interest" href="#">family</a>, <a class="main-interest" href="#">strengths finder</a>, and <a class="main-interest" href="#">blah, blah, blah</a>.
                 </p>
                 <ul>
                     <li>

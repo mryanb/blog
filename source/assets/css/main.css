@@ -10949,9 +10949,13 @@ section.about-section .header-div div > div img {
       align-self: center;
 }
 
-.content-part a {
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+.content-part a.main-interest {
+  border-bottom: 2px dashed #007bff;
+}
+
+.content-part a:hover.main-interest {
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .wt-blog__heading {

@@ -41,7 +41,7 @@
                         <form class="form-inline my-2 my-lg-0 position-relative search-form">
                             <input class="form-control mr-sm-2 pl-5" type="search" placeholder="Search" aria-label="Search">
                             <button class="p-0 bg-white border-0 position-absolute">
-                                <img src="assets/img/search icon.png" width="18" />
+                                <img src="assets/img/search_icon.png" width="18" />
                                     </button>
                         </form>
                         <a href="#" class="btn btn-outline-primary my-2 my-sm-0 bg-white">Login</a>
@@ -64,15 +64,17 @@
                         </button>
                         <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
+                                @if ($page->getPath() != '')
                                 <li class="nav-item mx-3 {{ $page->active('index') }}">
                                     <a class="nav-link font-weight-bold" href="{{ $page->baseUrl }}/">Home
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
+                                @endif
                                 <li class="nav-item mx-3 {{ $page->active('about') }}">
                                     <a class="nav-link font-weight-bold" href="{{ $page->baseUrl }}/about">About</a>
                                 </li>
-                                <li class="nav-item dropdown mx-3">
+                                <!-- <li class="nav-item dropdown mx-3">
                                     <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
                                         Resources
@@ -83,7 +85,7 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>

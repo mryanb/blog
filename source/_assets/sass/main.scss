@@ -404,8 +404,12 @@ section.about-section{
         }
     }
 
-    a{
-        text-decoration-style: dashed;
+    a.main-interest {
+        border-bottom: 2px dashed #007bff;
+    }
+    a:hover.main-interest {
+        font-weight: 400;
+        text-decoration: none;
     }
 }
 .wt-blog__heading {
